@@ -1,0 +1,19 @@
+MULTI-CLOUD ARCHITECTURE
+========================
+
+[Users]
+    |
+    ↓
+[Google Cloud]
+├── Cloud Storage (Static Website)
+├── Firebase Auth
+└── Cloud CDN
+    |
+    ↓ (API Calls)
+[Amazon AWS]
+├── AWS Lambda (Backend API)
+├── DynamoDB (Database)
+└── S3 (File Storage)
+    |
+    ↓ (Data Sync)
+[Google Cloud] ←───────┘
