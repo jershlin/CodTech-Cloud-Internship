@@ -1,0 +1,14 @@
+{
+  "policyName": "InternReadOnlyAccess",
+  "description": "Allows read-only access to storage resources",
+  "permissions": [
+    "storage.objects.get",
+    "storage.buckets.list",
+    "storage.objects.list"
+  ],
+  "restrictions": [
+    "No delete permissions",
+    "No write permissions",
+    "No billing access"
+  ]
+}
