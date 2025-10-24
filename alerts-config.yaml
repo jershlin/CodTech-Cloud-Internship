@@ -1,0 +1,12 @@
+alerts:
+  - name: "HighCPUUsage"
+    metric: "cpu_utilization"
+    condition: "> 80%"
+    duration: "300 seconds"
+    action: "notify_team"
+    
+  - name: "LowDiskSpace"
+    metric: "disk_usage"
+    condition: "> 90%"
+    duration: "120 seconds"
+    action: "auto_cleanup"
